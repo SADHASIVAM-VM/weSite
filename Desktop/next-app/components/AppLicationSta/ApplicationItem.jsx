@@ -1,10 +1,10 @@
 import React from 'react'
 
-const ApplicationItem = ({title,content}) => {
+const ApplicationItem = ({id, title,content}) => {
   
 
   return (
-    <div className='grid  gap-2 p-5'>
+    <div className='grid  gap-2 p-5' key={id}>
       <div className="border p-5 rounded-md md:w-[400px] w-[300px]">
       <div className="card_title flex items-center my-2">
         <p className=''>@</p>

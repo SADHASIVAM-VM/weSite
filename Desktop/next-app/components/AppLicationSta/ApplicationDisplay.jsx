@@ -44,7 +44,7 @@ const ApplicationDisplay = () => {
      <div className=''>
         {
             AppLiData.map((i)=>(
-                <ApplicationItem key={i.id} title={i.title} 
+                <ApplicationItem key={i.id} id={i.id} title={i.title} 
                 content={i.content}/>
             )).slice(0,3)
         }
@@ -55,7 +55,7 @@ const ApplicationDisplay = () => {
     <div className='flex flex-col  order-1'>
         {
             AppLiData.map((i)=>(
-                <ApplicationItem key={i.id} title={i.title} 
+                <ApplicationItem key={i.id} id={i.id} title={i.title} 
                 content={i.content}/>
             )).slice(3,6)
         }

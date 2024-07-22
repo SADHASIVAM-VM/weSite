@@ -31,7 +31,7 @@ const dummy = Array.from({length:6})
           </div>
 
           <div className="rounded-md shadow-md md:mx-5 p-5 bg-white">
-            <h4 className=' mb-3 font-bold'>Leave your contacts and we will call you back 
+            <h4 className=' mb-3 font-bold text-xl'>Leave your contacts and we will call you back 
               within 30minutes
             </h4>
 

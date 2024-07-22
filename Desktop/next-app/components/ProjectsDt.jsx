@@ -1,6 +1,6 @@
 import ProudSec from "./Projects/ProudSec"
 
-export default function ProjectDt() {
+const ProjectDt = ()=> {
     const projectName = [
         {
             id: 1,
@@ -147,37 +147,40 @@ export default function ProjectDt() {
 
             <div className="grid grid-cols-2 md:grid-cols-3 place-content-center gap-5">
                 <div>
-                    {projectName.slice(0, 5).map((i) => (
+                    {projectName.map((i) => (
                         <div className="flex items-center gap-2" key={i.id}>
                             <div className="bg-white rounded-full p-2 m-1">
                                 {i.icon}
                             </div>
                             <p className="text-sm font-bold">{i.title}</p>
                         </div>
-                    ))}
+                    )).slice(0, 5)
+                    }
                 </div>
                 <div>
-                    {projectName.slice(5, 10).map((i) => (
+                    {projectName.map((i) => (
                         <div className="flex items-center gap-2" key={i.id}>
                             <div className="bg-white rounded-full p-2 m-1">
                                 {i.icon}
                             </div>
                             <p className="text-sm font-bold">{i.title}</p>
                         </div>
-                    ))}
+                    )).slice(5, 10)}
                 </div>
                 <div>
-                    {projectName.slice(10, 15).map((i) => (
+                    {projectName.map((i) => (
                         <div className="flex items-center gap-2" key={i.id}>
                             <div className="bg-white rounded-full p-2 m-1">
                                 {i.icon}
                             </div>
                             <p className="text-sm font-bold">{i.title}</p>
                         </div>
-                    ))}
+                    )).slice(10, 15)}
                 </div>
             </div>
             <ProudSec />
         </div>
     );
 }
+
+export default ProjectDt;

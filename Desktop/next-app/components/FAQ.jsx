@@ -21,12 +21,9 @@ const FAQ = () => {
         }
     ];
 
-    const [openFAQ, setOpenFAQ] = useState<string | number | null>(null);
+    const [openFAQ, setOpenFAQ] = useState(null);
 
-    type FaqProps ={
-        id:string | number;
-    } 
-    const toggleFAQ = ({ id }: FaqProps) => {
+    const toggleFAQ = (id ) => {
         setOpenFAQ(openFAQ === id ? null : id);
     };
 

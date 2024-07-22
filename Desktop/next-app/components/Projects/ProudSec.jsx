@@ -1,9 +1,11 @@
-"use client"
-import React, { useState } from 'react'
+'use client'
+import React from 'react'
+import { useState } from 'react'
 import ProjectsDisplay from './ProjectsDisplay'
 
+
 const ProudSec = () => {
-  const [title, setTitle] = useState('Project1')
+  const [title, setTitle] = useState("")
 
     const ProjectData = [
         {
@@ -49,17 +51,17 @@ const ProudSec = () => {
       </div>
 
       <div className="">
-        <div className='flex gap-4 font-bold border bg-white rounded-md shadow-md p-2 my-5'>{projectTopic.map((i)=>(
-            <h1 className='cursor-pointer text-[12px]' onClick={()=> setTitle(i)}>{i}</h1>
+        <div className='flex gap-4 font-bold border bg-white rounded-md shadow-md p-2 my-5'>{projectTopic.map((i,index)=>(
+            <h1 key={index} className='cursor-pointer text-[12px]' onClick={()=> setTitle(i)}>{i}</h1>
         ))}</div>
       </div>
      <div className="">
     {
-       ProjectData.filter((i)=> i.title === title).map((o)=> <ProjectsDisplay title={o.title} content={o.content}/>)
+       ProjectData.filter((i)=> i.title === title).map((o)=> <ProjectsDisplay id={o.id} title={o.title} content={o.content}/>)
       } 
      </div>
      <div className="flex gap-2 my-2">
-      <p># india</p>
+      <p className='flex items-center gap-1'><img src="Svgs/marker.svg" alt="" className='w-3'/> india</p>
       <p># Real Estate</p>
      </div>
      <div className="">
