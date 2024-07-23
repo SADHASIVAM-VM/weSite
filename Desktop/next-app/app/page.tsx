@@ -7,6 +7,8 @@ import ApplicationDisplay from '@/components/AppLicationSta/ApplicationDisplay'
 import Team from '@/components/Team'
 import FAQ from '@/components/FAQ'
 import Footer from '@/components/Footer'
+import Image from 'next/image'
+import './globals.css'
 
 const page = () => {
 const dummy = Array.from({length:6})
@@ -70,7 +72,7 @@ const dummy = Array.from({length:6})
         </div>
 
         <div className="md:w-1/2">
-        <img src="/hero1.png" alt="" className='w-full object-cover'/>
+        <Image src="/hero1.png" alt="" className='w-full object-cover' width={500} height={10} />
         </div>
       </div>
 

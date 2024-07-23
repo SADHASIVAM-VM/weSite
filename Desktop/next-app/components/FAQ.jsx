@@ -1,6 +1,6 @@
 "use client"
 import React, { useState } from 'react'
-
+import Image from 'next/image';
 
 const FAQ = () => {
     const faqs = [
@@ -37,9 +37,9 @@ const FAQ = () => {
                             {question}
                             <span>
                                 {openFAQ === id ? (
-                                    <img src="/cross_icon.png" alt="Collapse" className="w-5" />
+                                    <Image src="/cross_icon.png" alt="Collapse" className="w-5" width={10} height={10}  />
                                 ) : (
-                                    <img src="/add.png" alt="Expand" className="w-7" />
+                                    <Image src="/add.png" alt="Expand" className="w-7" width={10} height={10} />
                                 )}
                             </span>
                         </p>

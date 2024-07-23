@@ -2,7 +2,7 @@
 import React from 'react'
 import { useState } from 'react'
 import ProjectsDisplay from './ProjectsDisplay'
-
+import Image from 'next/image'
 
 const ProudSec = () => {
   const [title, setTitle] = useState("")
@@ -61,7 +61,7 @@ const ProudSec = () => {
       } 
      </div>
      <div className="flex gap-2 my-2">
-      <p className='flex items-center gap-1'><img src="Svgs/marker.svg" alt="" className='w-3'/> india</p>
+      <p className='flex items-center gap-1'><Image src="Svgs/marker.svg" alt="" className='w-3' width={10} height={10} /> india</p>
       <p># Real Estate</p>
      </div>
      <div className="">
@@ -79,14 +79,14 @@ const ProudSec = () => {
       </div>
       
       <div className="flex gap-2 my-2">
-        <img src="./play_store.png" alt=""  className='w-32 object-contain'/>
-        <img src="./app_store.png" alt="" className='w-32 object-contain'/>
+        <Image src="/play_store.png" alt=""  className='w-32 object-contain' width={100} height={10} />
+        <Image src="/app_store.png" alt="" className='w-32 object-contain' width={100} height={10} />
       </div>
      </div>
     </div>
 
     <div className="md:w-1/2">
-    <img src="/hero.png" alt="" className='w-full object-contain' />
+    <Image src="/hero.png" alt="" className='w-full object-contain' width={600} height={100} />
     </div>
   </div>
     </div>

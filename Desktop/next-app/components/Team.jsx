@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Image from 'next/image'
 const Team = () => {
   return (
     <div className='flex flex-col md:flex-row p-5 gap-5 md:px-20 bg-gray-100'>
@@ -28,7 +28,7 @@ const Team = () => {
       </div>
 
       <div className="md:w-1/2">
-        <img src="/gd.jpg" alt="" className='w-82 rounded-md' />
+        <Image src="/gd.jpg" alt="" width={600} height={300}className=' rounded-md' />
       </div>
     </div>
   )

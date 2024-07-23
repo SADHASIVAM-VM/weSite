@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Image from 'next/image'
 const Webdev = () => {
   return (
    <div className="flex flex-col md:flex-row mx-5 md:px-20 my-10">
@@ -22,11 +22,11 @@ const Webdev = () => {
     <div className="md:w-1/2 flex md:justify-center">
     
  <div className="">
-    <p className="text-sm my-2 cursor-pointer font-bold flex">IOS development <img src="/Svgs/dropdown.svg" className='w-5' alt="" /></p>
-    <p className="text-sm my-2 cursor-pointer font-bold flex">UI/UX design <img src="/Svgs/dropdown.svg" className='w-5' alt="" /></p>
-    <p className="text-sm my-2 cursor-pointer font-bold flex">Testing <img src="/Svgs/dropdown.svg" className='w-5' alt="" /></p>
-    <p className="text-sm my-2 cursor-pointer font-bold flex">Launch <img src="/Svgs/dropdown.svg" className='w-5' alt="" /></p>
-    <p className="text-sm my-2 cursor-pointer font-bold flex">IT consulting <img src="/Svgs/dropdown.svg" className='w-5' alt="" /></p>
+    <p className="text-sm my-2 cursor-pointer font-bold flex">IOS development <Image src="/Svgs/dropdown.svg" className='w-5' alt="" width={10} height={10} /></p>
+    <p className="text-sm my-2 cursor-pointer font-bold flex">UI/UX design <Image src="/Svgs/dropdown.svg" className='w-5' alt="" width={10} height={10} /></p>
+    <p className="text-sm my-2 cursor-pointer font-bold flex">Testing <Image src="/Svgs/dropdown.svg" className='w-5' alt="" width={10} height={10} /></p>
+    <p className="text-sm my-2 cursor-pointer font-bold flex">Launch <Image src="/Svgs/dropdown.svg" className='w-5' alt="" width={10} height={10} /></p>
+    <p className="text-sm my-2 cursor-pointer font-bold flex">IT consulting <Image src="/Svgs/dropdown.svg" className='w-5' alt="" width={10} height={10} /></p>
  </div>
     </div>
 

@@ -1,6 +1,8 @@
 "use client"
 import React from 'react'
 import ApplicationItem from './ApplicationItem'
+import Image from 'next/image'
+
 const ApplicationDisplay = () => {
     const AppLiData =[
         {
@@ -50,7 +52,7 @@ const ApplicationDisplay = () => {
         }
     </div>
     <div className="flex flex-col  order-2 md:order-1">
-        <img src="/iphone.png" alt=""  className='w-52'/>
+        <Image src="/iphone.png" alt=""  className='w-52' width={600} height={100} />
     </div>
     <div className='flex flex-col  order-1'>
         {
